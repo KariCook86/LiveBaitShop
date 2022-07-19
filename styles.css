@@ -2,3 +2,33 @@
  Class: CIS130W01
  Name: Kari Cook
  Date: 07-18-22 */
+
+ html {
+   box-sizing: border-box;
+   font-family: arial, helvetica, sans-serif;
+   color: White;
+ }
+
+body {
+  background: url(bgwaves.png);
+  background-size: cover;
+  margin: 45px 45px;
+}
+
+.wrap {
+  display: grid;
+  grid-gap: 20px;
+}
+/* Navigation Styles */
+.nav ul {
+  display: grid;
+  list-style: none;
+}
+.nav a:hover {
+  color: white;
+}
+.nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 100%;
+}
