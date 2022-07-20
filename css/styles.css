@@ -1,0 +1,150 @@
+/*  Assignment: LiveBaitShop
+ Class: CIS130W01
+ Name: Kari Cook
+ Date: 07-18-22 */
+
+ html {
+   box-sizing: border-box;
+   font-family: arial, helvetica, sans-serif;
+   color: black;
+ }
+ .logo {
+   display: grid;
+   grid-gap: 20px;
+   box-shadow: 0 2px 4px #3e3d42;
+   justify-content: center;
+   background-color: #3e3d42;
+   margin: 5px;
+ }
+ .logo img {
+     padding: 50px;
+     max-width: 300px;
+ }
+
+body {
+  background-color: #dffcf9;
+  background-size: cover;
+  line-height: 1.4;
+  margin: 50px 50px;
+}
+h1 {
+  font-size: 3em;
+  color: black;
+  text-shadow: 1px 1px #3ad4bd;
+}
+p {
+  font-size: 1.5em;
+}
+
+/* Navigation Styles */
+.nav ul {
+  display: grid;
+  grid-gap: 20px;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(4, 1fr);
+}
+.nav a:hover {
+  color: white;
+  box-shadow: 0 5px 5px #3ad4bd;
+}
+.nav a {
+  display: block;
+  text-decoration: none;
+  font-size: 1.5rem;
+  background: #3e3d42;
+  color: #3ad4bd;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .5px;
+}
+
+/* Grid styles */
+.wrap {
+  display: grid;
+  grid-gap: 20px;
+}
+.contain {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+     'head head side1'
+     'head head side2';
+}
+.head {
+  grid-area: head;
+  text-align: center;
+  padding: 10px;
+  background-color: #a7abab;
+  box-shadow: 0 2px 4px #3ad4bd;
+}
+.head p {
+  font-size: 1.5em;
+  font-style: italic;
+  padding: 20px;
+}
+.head img {
+   max-width: 100%;
+   max-height: 100%;
+   box-shadow:  0 2px 4px #3e3d42;
+}
+.reels {
+  max-width: 250px;
+  padding: 20px;
+}
+.side {
+  display: grid;
+  justify-items: center;
+  background: #3ad4bd;
+  box-shadow: 0 2px 4px #3e3d42;
+}
+.side1 {
+  grid-area: side1;
+  text-align: center;
+  padding: 20px;
+}
+.side2 {
+  grid-area: side2;
+  padding: 20px;
+  text-align: center;
+}
+.images {
+  display: grid;
+  grid-gap: 20px;
+}
+.images img {
+  width: 100%;
+  box-shadow: 0 2px 4px #3e3d42;
+}
+.bass img {
+  max-width: 100%;
+}
+
+footer {
+  margin-top: 1.5rem;
+  background: #3e3d42;
+  color: #3ad4bd;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Breakpoint styles */
+
+ @media (max-width: 700px){
+    .contain {
+      grid-template-areas:
+      'head head'
+      'side1 side2';
+    }
+    .nav ul {
+       grid-template-columns: 1fr;
+     }
+  }
+  @media (max-width: 500px){
+     .contain {
+       grid-template-areas:
+       'head'
+       'side1'
+       'side2';
+     }
+   }
